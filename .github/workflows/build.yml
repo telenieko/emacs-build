@@ -51,7 +51,7 @@ jobs:
           - os: windows-11-arm
             shell: powershell
             msystem: CLANGARM64
-            build_options: --enable-build-details
+            build_options: --enable-build-details --without-native-compilation
 
     # The type of runner that the job will run on
     runs-on: ${{ matrix.os }}
